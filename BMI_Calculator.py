@@ -1,11 +1,15 @@
 import streamlit as st
 
+st.title("BMI Calaculator")
+
+st.text(" BMI is an indicator of body fat which is in Healthy or not based on height and weight")
+
 with st.form("BMI Calculator", border = False):
     col1, col2, col3 = st.columns([2,2,1])
 with col1:
-    weight = st.number_input("Your Weight in kgs")
+    height = st.number_input("Your Height in Meters")
 with col2:
-    height = st.number_input("Your Height in meters")
+    weight = st.number_input("Your Weight in Kgs")
 with col3:
     submit = st.form_submit_button('Calculate')
 
